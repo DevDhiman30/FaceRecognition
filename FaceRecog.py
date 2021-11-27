@@ -1,7 +1,6 @@
 import face_recognition
 import cv2
 
-l = []
 video_capture = cv2.VideoCapture(0)
 
 # Load a sample picture and learn how to recognize it.
@@ -59,7 +58,7 @@ while True:
             if True in matches:
                 first_match_index = matches.index(True)
                 name = known_face_names[first_match_index]
-                l.append(name)
+                
 
 
 
